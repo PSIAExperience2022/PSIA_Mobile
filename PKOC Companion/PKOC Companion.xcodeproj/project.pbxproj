@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E3A70D529AD4B5000A02DC5 /* PKOCDeviceTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3A70D429AD4B5000A02DC5 /* PKOCDeviceTile.swift */; };
+		0E901FF529AD536E00AF6508 /* ScanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E901FF429AD536E00AF6508 /* ScanningView.swift */; };
+		0E901FF829AD67B100AF6508 /* SlideToUnlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E901FF729AD67B100AF6508 /* SlideToUnlock.swift */; };
+		0E901FFA29AD67CF00AF6508 /* DraggingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E901FF929AD67CF00AF6508 /* DraggingComponent.swift */; };
+		0EB4EF3729AD75B90037C7BB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB4EF3629AD75B90037C7BB /* LottieView.swift */; };
+		0EB4EF3A29AD75FE0037C7BB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB4EF3929AD75FE0037C7BB /* Lottie */; };
+		0EB4EF3F29AD76B20037C7BB /* lockAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EB4EF3E29AD76B20037C7BB /* lockAnimation.json */; };
+		0EB4EF4129AD775D0037C7BB /* roomAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EB4EF4029AD775C0037C7BB /* roomAnimation.json */; };
+		0EB4EF4329AD78A50037C7BB /* bluetoothSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EB4EF4229AD78A50037C7BB /* bluetoothSearch.json */; };
+		0EB4EF4529AD79360037C7BB /* notFound.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EB4EF4429AD79360037C7BB /* notFound.json */; };
+		AD0DC8C22992D440005C56A5 /* BluetoothController+LockUnlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0DC8C12992D440005C56A5 /* BluetoothController+LockUnlock.swift */; };
+		AD2D9D7C2979D3920066DB39 /* PKOC_CompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9D7B2979D3920066DB39 /* PKOC_CompanionApp.swift */; };
+		AD2D9D7E2979D3920066DB39 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9D7D2979D3920066DB39 /* HomeScreenView.swift */; };
+		AD2D9D802979D3930066DB39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2D9D7F2979D3930066DB39 /* Assets.xcassets */; };
+		AD2D9D832979D3930066DB39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2D9D822979D3930066DB39 /* Preview Assets.xcassets */; };
+		AD2D9D8B2979DDF30066DB39 /* BluetoothController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9D8A2979DDF30066DB39 /* BluetoothController.swift */; };
+		AD2D9D8D2979DE000066DB39 /* CBUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9D8C2979DE000066DB39 /* CBUUID.swift */; };
+		AD2D9D922979E23B0066DB39 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9D912979E23B0066DB39 /* HomeView.swift */; };
+		AD2D9DA1297F02F40066DB39 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9DA0297F02F40066DB39 /* LoginView.swift */; };
+		AD2D9DA3297F030C0066DB39 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9DA2297F030C0066DB39 /* SignupView.swift */; };
+		AD2D9DA5297F03180066DB39 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9DA4297F03180066DB39 /* AppData.swift */; };
+		AD2D9DA7297F128B0066DB39 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9DA6297F128B0066DB39 /* AuthenticationManager.swift */; };
+		AD2D9DAB297F13C50066DB39 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9DAA297F13C50066DB39 /* AuthenticationView.swift */; };
+		AD2D9DAE297F3B5A0066DB39 /* SecureInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9DAD297F3B5A0066DB39 /* SecureInputView.swift */; };
+		AD2D9DB2297F43D70066DB39 /* LabelledDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9DB1297F43D70066DB39 /* LabelledDivider.swift */; };
+		AD2D9DB4297F44500066DB39 /* SignInWithProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2D9DB3297F44500066DB39 /* SignInWithProviderView.swift */; };
+		AD37584B298065EA00E7FB66 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD37584A298065EA00E7FB66 /* KeychainHelper.swift */; };
+		AD6E16E529B281F6006C51FC /* KeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6E16E429B281F6006C51FC /* KeyStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E3A70D429AD4B5000A02DC5 /* PKOCDeviceTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKOCDeviceTile.swift; sourceTree = "<group>"; };
+		0E901FF429AD536E00AF6508 /* ScanningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningView.swift; sourceTree = "<group>"; };
+		0E901FF729AD67B100AF6508 /* SlideToUnlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideToUnlock.swift; sourceTree = "<group>"; };
+		0E901FF929AD67CF00AF6508 /* DraggingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggingComponent.swift; sourceTree = "<group>"; };
+		0EB4EF3629AD75B90037C7BB /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		0EB4EF3E29AD76B20037C7BB /* lockAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lockAnimation.json; sourceTree = "<group>"; };
+		0EB4EF4029AD775C0037C7BB /* roomAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = roomAnimation.json; sourceTree = "<group>"; };
+		0EB4EF4229AD78A50037C7BB /* bluetoothSearch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bluetoothSearch.json; sourceTree = "<group>"; };
+		0EB4EF4429AD79360037C7BB /* notFound.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notFound.json; sourceTree = "<group>"; };
+		AD0DC8C12992D440005C56A5 /* BluetoothController+LockUnlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BluetoothController+LockUnlock.swift"; sourceTree = "<group>"; };
+		AD253894298878230087455E /* PKOC-Companion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PKOC-Companion-Info.plist"; sourceTree = SOURCE_ROOT; };
+		AD2D9D782979D3920066DB39 /* PKOC Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PKOC Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2D9D7B2979D3920066DB39 /* PKOC_CompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKOC_CompanionApp.swift; sourceTree = "<group>"; };
+		AD2D9D7D2979D3920066DB39 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		AD2D9D7F2979D3930066DB39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD2D9D822979D3930066DB39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD2D9D8A2979DDF30066DB39 /* BluetoothController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothController.swift; sourceTree = "<group>"; };
+		AD2D9D8C2979DE000066DB39 /* CBUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBUUID.swift; sourceTree = "<group>"; };
+		AD2D9D912979E23B0066DB39 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AD2D9DA0297F02F40066DB39 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AD2D9DA2297F030C0066DB39 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		AD2D9DA4297F03180066DB39 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		AD2D9DA6297F128B0066DB39 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		AD2D9DAA297F13C50066DB39 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		AD2D9DAD297F3B5A0066DB39 /* SecureInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureInputView.swift; sourceTree = "<group>"; };
+		AD2D9DB1297F43D70066DB39 /* LabelledDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDivider.swift; sourceTree = "<group>"; };
+		AD2D9DB3297F44500066DB39 /* SignInWithProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithProviderView.swift; sourceTree = "<group>"; };
+		AD37584A298065EA00E7FB66 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		AD6E16E429B281F6006C51FC /* KeyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD2D9D752979D3920066DB39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB4EF3A29AD75FE0037C7BB /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E901FF329AD535C00AF6508 /* Scanning */ = {
+			isa = PBXGroup;
+			children = (
+				0E901FF429AD536E00AF6508 /* ScanningView.swift */,
+			);
+			path = Scanning;
+			sourceTree = "<group>";
+		};
+		0E901FF629AD679700AF6508 /* SlideToUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				0E901FF729AD67B100AF6508 /* SlideToUnlock.swift */,
+				0E901FF929AD67CF00AF6508 /* DraggingComponent.swift */,
+			);
+			path = SlideToUnlock;
+			sourceTree = "<group>";
+		};
+		0EB4EF3529AD75A80037C7BB /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				0EB4EF3629AD75B90037C7BB /* LottieView.swift */,
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		0EB4EF3C29AD76190037C7BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EB4EF3D29AD76230037C7BB /* json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0EB4EF3D29AD76230037C7BB /* json */ = {
+			isa = PBXGroup;
+			children = (
+				0EB4EF4229AD78A50037C7BB /* bluetoothSearch.json */,
+				0EB4EF4429AD79360037C7BB /* notFound.json */,
+				0EB4EF4029AD775C0037C7BB /* roomAnimation.json */,
+				0EB4EF3E29AD76B20037C7BB /* lockAnimation.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		AD2D9D6F2979D3920066DB39 = {
+			isa = PBXGroup;
+			children = (
+				AD2D9D7A2979D3920066DB39 /* PKOC Companion */,
+				AD2D9D792979D3920066DB39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD2D9D792979D3920066DB39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD2D9D782979D3920066DB39 /* PKOC Companion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD2D9D7A2979D3920066DB39 /* PKOC Companion */ = {
+			isa = PBXGroup;
+			children = (
+				0EB4EF3C29AD76190037C7BB /* Resources */,
+				AD253894298878230087455E /* PKOC-Companion-Info.plist */,
+				AD2D9DAC297F3B4B0066DB39 /* ReusuableComponents */,
+				AD2D9D892979DDE40066DB39 /* Models */,
+				AD2D9D7B2979D3920066DB39 /* PKOC_CompanionApp.swift */,
+				AD2D9D8E2979DE360066DB39 /* Views */,
+				AD2D9D7D2979D3920066DB39 /* HomeScreenView.swift */,
+				AD2D9D7F2979D3930066DB39 /* Assets.xcassets */,
+				AD2D9D812979D3930066DB39 /* Preview Content */,
+			);
+			path = "PKOC Companion";
+			sourceTree = "<group>";
+		};
+		AD2D9D812979D3930066DB39 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AD2D9D822979D3930066DB39 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD2D9D892979DDE40066DB39 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD2D9D8A2979DDF30066DB39 /* BluetoothController.swift */,
+				AD0DC8C12992D440005C56A5 /* BluetoothController+LockUnlock.swift */,
+				AD2D9D8C2979DE000066DB39 /* CBUUID.swift */,
+				AD2D9DA4297F03180066DB39 /* AppData.swift */,
+				AD2D9DA6297F128B0066DB39 /* AuthenticationManager.swift */,
+				AD37584A298065EA00E7FB66 /* KeychainHelper.swift */,
+				AD6E16E429B281F6006C51FC /* KeyStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD2D9D8E2979DE360066DB39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E901FF329AD535C00AF6508 /* Scanning */,
+				AD2D9D9F297F02950066DB39 /* Home */,
+				AD2D9D9E297F02700066DB39 /* Authentication */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD2D9D9E297F02700066DB39 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AD2D9DA0297F02F40066DB39 /* LoginView.swift */,
+				AD2D9DA2297F030C0066DB39 /* SignupView.swift */,
+				AD2D9DAA297F13C50066DB39 /* AuthenticationView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		AD2D9D9F297F02950066DB39 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AD2D9D912979E23B0066DB39 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AD2D9DAC297F3B4B0066DB39 /* ReusuableComponents */ = {
+			isa = PBXGroup;
+			children = (
+				0EB4EF3529AD75A80037C7BB /* LottieAnimations */,
+				0E901FF629AD679700AF6508 /* SlideToUnlock */,
+				AD2D9DAD297F3B5A0066DB39 /* SecureInputView.swift */,
+				AD2D9DB1297F43D70066DB39 /* LabelledDivider.swift */,
+				AD2D9DB3297F44500066DB39 /* SignInWithProviderView.swift */,
+				0E3A70D429AD4B5000A02DC5 /* PKOCDeviceTile.swift */,
+			);
+			path = ReusuableComponents;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD2D9D772979D3920066DB39 /* PKOC Companion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD2D9D862979D3930066DB39 /* Build configuration list for PBXNativeTarget "PKOC Companion" */;
+			buildPhases = (
+				AD2D9D742979D3920066DB39 /* Sources */,
+				AD2D9D752979D3920066DB39 /* Frameworks */,
+				AD2D9D762979D3920066DB39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PKOC Companion";
+			packageProductDependencies = (
+				0EB4EF3929AD75FE0037C7BB /* Lottie */,
+			);
+			productName = "PKOC Companion";
+			productReference = AD2D9D782979D3920066DB39 /* PKOC Companion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD2D9D702979D3920066DB39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					AD2D9D772979D3920066DB39 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = AD2D9D732979D3920066DB39 /* Build configuration list for PBXProject "PKOC Companion" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD2D9D6F2979D3920066DB39;
+			packageReferences = (
+				0EB4EF3829AD75FE0037C7BB /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
+			productRefGroup = AD2D9D792979D3920066DB39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD2D9D772979D3920066DB39 /* PKOC Companion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD2D9D762979D3920066DB39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD2D9D832979D3930066DB39 /* Preview Assets.xcassets in Resources */,
+				AD2D9D802979D3930066DB39 /* Assets.xcassets in Resources */,
+				0EB4EF4529AD79360037C7BB /* notFound.json in Resources */,
+				0EB4EF4329AD78A50037C7BB /* bluetoothSearch.json in Resources */,
+				0EB4EF3F29AD76B20037C7BB /* lockAnimation.json in Resources */,
+				0EB4EF4129AD775D0037C7BB /* roomAnimation.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD2D9D742979D3920066DB39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD2D9D7E2979D3920066DB39 /* HomeScreenView.swift in Sources */,
+				AD2D9DAE297F3B5A0066DB39 /* SecureInputView.swift in Sources */,
+				0E901FF829AD67B100AF6508 /* SlideToUnlock.swift in Sources */,
+				AD2D9D8B2979DDF30066DB39 /* BluetoothController.swift in Sources */,
+				AD2D9D7C2979D3920066DB39 /* PKOC_CompanionApp.swift in Sources */,
+				AD2D9DB2297F43D70066DB39 /* LabelledDivider.swift in Sources */,
+				0E901FFA29AD67CF00AF6508 /* DraggingComponent.swift in Sources */,
+				AD0DC8C22992D440005C56A5 /* BluetoothController+LockUnlock.swift in Sources */,
+				0E3A70D529AD4B5000A02DC5 /* PKOCDeviceTile.swift in Sources */,
+				AD2D9DA5297F03180066DB39 /* AppData.swift in Sources */,
+				AD2D9DAB297F13C50066DB39 /* AuthenticationView.swift in Sources */,
+				0EB4EF3729AD75B90037C7BB /* LottieView.swift in Sources */,
+				0E901FF529AD536E00AF6508 /* ScanningView.swift in Sources */,
+				AD2D9DA3297F030C0066DB39 /* SignupView.swift in Sources */,
+				AD2D9DA1297F02F40066DB39 /* LoginView.swift in Sources */,
+				AD2D9DA7297F128B0066DB39 /* AuthenticationManager.swift in Sources */,
+				AD2D9D922979E23B0066DB39 /* HomeView.swift in Sources */,
+				AD37584B298065EA00E7FB66 /* KeychainHelper.swift in Sources */,
+				AD2D9DB4297F44500066DB39 /* SignInWithProviderView.swift in Sources */,
+				AD6E16E529B281F6006C51FC /* KeyStore.swift in Sources */,
+				AD2D9D8D2979DE000066DB39 /* CBUUID.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AD2D9D842979D3930066DB39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD2D9D852979D3930066DB39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD2D9D872979D3930066DB39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PKOC Companion/Preview Content\"";
+				DEVELOPMENT_TEAM = RDC95W3KFK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PKOC-Companion-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Required to scan and connect to nearby Bluetooth Devices";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Provide a way of authentication";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lastlock.app.PKOC-Companion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD2D9D882979D3930066DB39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PKOC Companion/Preview Content\"";
+				DEVELOPMENT_TEAM = RDC95W3KFK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PKOC-Companion-Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Required to scan and connect to nearby Bluetooth Devices";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Provide a way of authentication";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lastlock.app.PKOC-Companion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD2D9D732979D3920066DB39 /* Build configuration list for PBXProject "PKOC Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD2D9D842979D3930066DB39 /* Debug */,
+				AD2D9D852979D3930066DB39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD2D9D862979D3930066DB39 /* Build configuration list for PBXNativeTarget "PKOC Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD2D9D872979D3930066DB39 /* Debug */,
+				AD2D9D882979D3930066DB39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0EB4EF3829AD75FE0037C7BB /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0EB4EF3929AD75FE0037C7BB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EB4EF3829AD75FE0037C7BB /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AD2D9D702979D3920066DB39 /* Project object */;
+}
