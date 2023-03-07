@@ -13,14 +13,14 @@ import CryptoKit
 class AuthenticationManager: ObservableObject {
     static var isUserAuthenticated = PassthroughSubject<Bool, Never>()
     
-    static private var publicKey: Curve25519.Signing.PublicKey? = nil
-    static private var privateKey: Curve25519.Signing.PrivateKey? = nil
+    static private var publicKey: P256.Signing.PublicKey? = nil
+    static private var privateKey: P256.Signing.PrivateKey? = nil
     
-    static func exportPublicKey() -> Curve25519.Signing.PublicKey {
+    static func exportPublicKey() -> P256.Signing.PublicKey {
         return publicKey!
     }
     
-    static func exportPrivateKey() -> Curve25519.Signing.PrivateKey {
+    static func exportPrivateKey() -> P256.Signing.PrivateKey {
         return privateKey!
     }
     
@@ -63,9 +63,12 @@ class AuthenticationManager: ObservableObject {
         }
         print("Signature for the nonce: \(signature)")
         
-         compHand(.success([UInt8](signature)))
+        compHand(.success([UInt8](signature.rawRepresentation)))
     }
     
+    /*
+     TODO: - But this can be avoided potentially
+     */
     private static func removeASNHeaderFromSignature() {
         
     }
@@ -73,7 +76,7 @@ class AuthenticationManager: ObservableObject {
     /*
      Assigns the key values based on the values provided
      */
-    static func loadKeys(privateKey: Curve25519.Signing.PrivateKey, publicKey: Curve25519.Signing.PublicKey) {
+    static func loadKeys(privateKey: P256.Signing.PrivateKey, publicKey: P256.Signing.PublicKey) {
         self.publicKey = publicKey
         self.privateKey = privateKey
     }
@@ -82,7 +85,8 @@ class AuthenticationManager: ObservableObject {
         // Create an asymmertic key pair with Elliptic Curve crypto
         // using EcdsaSignatureMessageX962Sha256
         // Creating a random private key to use
-        let signingKey = Curve25519.Signing.PrivateKey()
+//        let signingKey = Curve25519.Signing.PrivateKey()
+        let signingKey = P256.Signing.PrivateKey()
         self.privateKey = signingKey
         
         // Get a data representation of the public key from this private key

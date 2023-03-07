@@ -26,7 +26,7 @@ struct ContentView: View {
                 print("Keys fetched from storage public: \(keys.publicKey.base64EncodedString())")
                 print("Keys fetched from storage private: \(keys.privateKey.base64EncodedString())")
                 do {
-                    try AuthenticationManager.loadKeys(privateKey: Curve25519.Signing.PrivateKey(rawRepresentation: keys.privateKey), publicKey: Curve25519.Signing.PublicKey(rawRepresentation: keys.publicKey))
+                    try AuthenticationManager.loadKeys(privateKey: P256.Signing.PrivateKey(rawRepresentation: keys.privateKey), publicKey: P256.Signing.PublicKey(rawRepresentation: keys.publicKey))
                 } catch {
                     print("Error: Error in converting keys from storage to app data")
                     fatalError()

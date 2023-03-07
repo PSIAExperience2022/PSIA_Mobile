@@ -300,7 +300,7 @@ class BluetoothController: UIViewController, CBCentralManagerDelegate, CBPeriphe
     
     /*
      Signs the provided nonce and sends it to the connected peripheral on it's write characteristic.
-     Assumption: public and private Curve25519 keys should be created and stored as static members of
+     Assumption: public and private P256 keys should be created and stored as static members of
      AuthenticationManager
      */
     private func signNonce(nonce: [UInt8]) {
